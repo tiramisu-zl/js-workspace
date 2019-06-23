@@ -1,0 +1,23 @@
+#1
+输入：
+    start: Number
+    end: Number
+输出：
+    isValidInput: bool
+#2
+输入：
+    isValid: false
+输出：
+    result：null
+#2
+输入：
+    isValid: true
+    start: Number
+    end: Number
+输出：
+    tableString: String
+#3 打印
+输入：
+    tableString
+输出：
+    result: String: console.log()
