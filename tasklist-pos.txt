@@ -1,0 +1,29 @@
+#1 获得商品数量
+输入：
+    inputs: [String]
+
+    goodsInfo: [{
+        id: String,
+        name: String,
+        price: Number,
+    }]: database
+输出：
+    goodList:[{
+        id: String,
+        name: String,
+        price: Number,
+        number: Number,
+    }]
+#3 计算总价
+输入：
+    goodList
+输出：
+    summary: {
+      totalPrices: Number,
+    }
+#4 打印小票
+输入：
+    goodList
+    summary
+输出：
+    result: String: console.log()
