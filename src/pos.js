@@ -68,7 +68,7 @@ function buildReceipt(goods, summary) {
     const head = 'Receipts\n';
     const splitLine = '------------------------------------------------------------\n';
     const goodInfoStr = goods.map(good => {
-        return `${good.name}                       ${good.price}          ${good.number}\n`;
+        return `${good.name}\t\t\t\t\t\t${good.price}\t\t\t${good.number}\n`;
     });
     const summaryStr = `Price: ${summary.totalPrices}`;
 

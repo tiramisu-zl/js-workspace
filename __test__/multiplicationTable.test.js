@@ -1,4 +1,4 @@
-const printMultiplicationTable = require('../multiplicationTable');
+const printMultiplicationTable = require('../src/multiplicationTable');
 
 describe('multiplication table', () => {
   it('should print multiplication table', () => {

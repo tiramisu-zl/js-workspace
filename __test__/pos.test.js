@@ -1,6 +1,6 @@
 'use strict';
 
-const printReceipt = require('../pos');
+const printReceipt = require('../src/pos');
 
 describe('pos', () => {
 
@@ -14,9 +14,9 @@ describe('pos', () => {
 
     const expectText = `Receipts
 ------------------------------------------------------------
-Coca Cola                       3          1
-Pepsi-Cola                       5          2
-Dr Pepper                       7          1
+Coca Cola\t\t\t\t\t\t3\t\t\t1
+Pepsi-Cola\t\t\t\t\t\t5\t\t\t2
+Dr Pepper\t\t\t\t\t\t7\t\t\t1
 ------------------------------------------------------------
 Price: 20`;
 
