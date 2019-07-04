@@ -14,14 +14,14 @@
         price: Number,
         number: Number,
     }]
-#3 计算总价
+#2 计算总价
 输入：
     goodList
 输出：
     summary: {
       totalPrices: Number,
     }
-#4 打印小票
+#3 打印小票
 输入：
     goodList
     summary

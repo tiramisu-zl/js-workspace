@@ -20,7 +20,8 @@ function printReceipt(inputs) {
     const countedGoods = countGoods(inputs);
     const goodsList = getGoodList(countedGoods, goodsInfo);
     const summary = getSummary(goodsList);
-    print(goodsList, summary);
+    const receipt = buildReceipt(goodsList, summary);
+    console.log(receipt);
 }
 
 function countGoods(inputs) {
@@ -63,7 +64,7 @@ function getSummary(goods) {
     }
 }
 
-function print(goods, summary) {
+function buildReceipt(goods, summary) {
     const head = 'Receipts\n';
     const splitLine = '------------------------------------------------------------\n';
     const goodInfoStr = goods.map(good => {
@@ -72,8 +73,7 @@ function print(goods, summary) {
     const summaryStr = `Price: ${summary.totalPrices}`;
 
 
-    const printStr = head + splitLine + goodInfoStr.join('') + splitLine + summaryStr;
-    console.log(printStr);
+    return head + splitLine + goodInfoStr.join('') + splitLine + summaryStr;
 }
 
 module.exports = printReceipt;
